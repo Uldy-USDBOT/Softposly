@@ -253,6 +253,11 @@
   }
   .invest-bar-caption{font-size:12.5px; color:#64748B; margin-bottom:24px;}
   .invest-copy .cta{display:inline-flex;}
+  .invest-copy .cta + .cta{margin-inline-start:10px;}
+  @media(max-width:480px){
+    .invest-copy .cta{display:flex; width:100%; justify-content:center;}
+    .invest-copy .cta + .cta{margin-inline-start:0; margin-top:10px;}
+  }
   .contact-card-outer{
     background:var(--navy); border-radius:26px; color:#fff;
     padding:44px; display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:center;
@@ -437,6 +442,7 @@
         <div class="invest-bar-track"><div class="invest-bar-fill"></div></div>
         <p class="invest-bar-caption" data-i18n="invest_bar_caption">10% من إجمالي الأسهم متاحة حاليًا لمرحلة ما قبل الجولة التمويلية الأولى</p>
         <a class="cta cta-primary" href="#contactCard" data-i18n="invest_cta" style="background:var(--navy); color:#fff;">تواصل بخصوص الاستثمار</a>
+        <a class="cta cta-primary" href="https://mypay.ly/payment-link/share/fU29M1dV5WJZlaiqFaF215aXti1ENmpV1SwKoO5EirJ2U1phbYo4CigjSOG2" target="_blank" rel="noopener noreferrer" data-i18n="invest_buy_cta" style="background:var(--emerald); color:#fff;">شراء الأسهم الآن</a>
       </div>
     </div>
   </div>
